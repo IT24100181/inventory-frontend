@@ -13,7 +13,7 @@ function App() {
 
   const fetchItems = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/items');
+      const response = await axios.get('https://inventory-backend-production-2954.up.railway.app/api');
       setItems(response.data);
     } catch (error) {
       console.error('Error fetching items:', error);
